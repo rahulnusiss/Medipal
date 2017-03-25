@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MediPal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="upcoming_appointments_tag" translatable="false">upcoming_appointments</string>
+    <string name="overdue_appointments_tag" translatable="false">overdue_appointments</string>
+    <string name="upcoming_appointments_name">Upcoming</string>
+    <string name="overdue_appointments_name">Overdue</string>
+    <string name="appointment_description_hint">Medical examination, fasting needed.</string>
+    <string name="appointment_default_time">Choose your appointment time</string>
+    <string name="appointment_location_hint">Location</string>
+    <string name="appointment_delete_dialog_msg">You are trying to delete an appointment.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="title_activity_new_medicine">NewMedicineActivity</string>
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="consumption_heading">Consumption</string>
+    <string name="consumption_colum1">Quantity</string>
+    <string name="consumption_colum2">Consumed On</string>
+    <string-array name="Consumption_Filter">
+        <item>By Medicine</item>
+        <item>By Category</item>
+        <item>Missed</item>
+    </string-array>
+</resources>

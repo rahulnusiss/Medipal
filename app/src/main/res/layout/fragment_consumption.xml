@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/Fragment_Consumption">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/List_Consumption"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        style="@style/Widget.AppCompat.ListView" />
+
+    <Spinner
+        android:layout_width="50dp"
+        android:id="@+id/Consumption_Filter"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_height="wrap_content"
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+        android:entries="@array/Consumption_Filter" />
+
+</RelativeLayout>

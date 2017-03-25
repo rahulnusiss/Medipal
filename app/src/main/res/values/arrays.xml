@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_array">
+        <item>Next of Kin</item>
+        <item>Doctors</item>
+        <item>Emergency Numbers</item>
+    </string-array>
+</resources>

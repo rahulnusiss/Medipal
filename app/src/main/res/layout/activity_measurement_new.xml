@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_measurement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="f06.medipal.Measurement.NewMeasurementActivity">
+
+    <!--Systolic-->
+    <CheckBox
+        android:id="@+id/checkBoxSystolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:text="Systolic"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textViewBarSystolicMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxSystolic"
+        android:layout_marginLeft="10dp"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/textViewBarSystolicVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxSystolic"
+        android:layout_centerHorizontal="true"
+        android:text="50(mmHg)" />
+
+    <TextView
+        android:id="@+id/textViewBarSystolicMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxSystolic"
+        android:text="200" />
+
+    <SeekBar
+        android:id="@+id/seekBarSystolic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBarSystolicMin"
+        android:max="150" />
+
+    <!--Diastolic-->
+    <CheckBox
+        android:id="@+id/checkBoxDiastolic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarSystolic"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Diastolic"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textViewBarDiastolicMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDiastolic"
+        android:layout_marginLeft="10dp"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/textViewBarDiastolicVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxDiastolic"
+        android:layout_centerHorizontal="true"
+        android:text="50(mmHg)" />
+
+    <TextView
+        android:id="@+id/textViewBarDiastolicMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxDiastolic"
+        android:text="200" />
+
+    <SeekBar
+        android:id="@+id/seekBarDiastolic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBarDiastolicMin"
+        android:max="150" />
+
+    <!--Pulse-->
+    <CheckBox
+        android:id="@+id/checkBoxPulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarDiastolic"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Pulse"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textViewBarPulseMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxPulse"
+        android:layout_marginLeft="10dp"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/textViewBarPulseVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxPulse"
+        android:layout_centerHorizontal="true"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/textViewBarPulseMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxPulse"
+        android:text="200" />
+
+    <SeekBar
+        android:id="@+id/seekBarPulse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBarPulseMin"
+        android:max="150" />
+
+    <!--Temperature-->
+    <CheckBox
+        android:id="@+id/checkBoxTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarPulse"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Temperature"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textViewBarTemperatureMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxTemperature"
+        android:layout_marginLeft="10dp"
+        android:text="35.0" />
+
+    <TextView
+        android:id="@+id/textViewBarTemperatureVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxTemperature"
+        android:layout_centerHorizontal="true"
+        android:text="35.0(°C)" />
+
+    <TextView
+        android:id="@+id/textViewBarTemperatureMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxTemperature"
+        android:text="45.0" />
+
+    <SeekBar
+        android:id="@+id/seekBarTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBarTemperatureMin"
+        android:max="100" />
+
+    <!--Weight-->
+    <CheckBox
+        android:id="@+id/checkBoxWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarTemperature"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Weight"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/textViewBarWeightMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxWeight"
+        android:layout_marginLeft="10dp"
+        android:text="30" />
+
+    <TextView
+        android:id="@+id/textViewBarWeightVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxWeight"
+        android:layout_centerHorizontal="true"
+        android:text="30(kg)" />
+
+    <TextView
+        android:id="@+id/textViewBarWeightMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxWeight"
+        android:text="200" />
+
+    <SeekBar
+        android:id="@+id/seekBarWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewBarWeightMin"
+        android:max="170" />
+
+    <!--Buttons-->
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBarWeight"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:onClick="onOK"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarWeight"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCancel"
+        android:text="Cancel" />
+
+</RelativeLayout>

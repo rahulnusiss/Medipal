@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:padding="30dp"
+            android:text="EDIT HEALTH BIO"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            tools:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:text="CONDITION:"
+                android:textSize="14sp"
+                android:textStyle="normal|bold"
+                tools:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edit_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Medical conditions"
+                />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="START DATE:"
+                android:textSize="14sp"
+                android:textStyle="normal|bold"
+                android:inputType="date"
+                tools:padding="10dp" />
+
+            <DatePicker
+                android:layout_toRightOf="@id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_date"
+                android:layout_marginLeft="10dp"
+                android:hint="initial date"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                android:calendarViewShown="false"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:text="CONDITION TYPE:"
+                android:textSize="14sp"
+                android:textStyle="normal|bold"
+                tools:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/spinner_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:text="Update"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_update"
+                android:gravity="center_horizontal"
+                />
+            <Button
+                android:text="Cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_cancel"
+                android:gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

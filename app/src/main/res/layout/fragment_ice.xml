@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_ice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroupICE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:theme="@android:style/DeviceDefault.Light.SegmentedButton"
+            android:checkedButton="@+id/RadioButtonKin"
+            style="?android:attr/segmentedButtonStyle">
+            <RadioButton
+                android:id="@+id/RadioButtonKin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textAlignment="center"
+                android:background="@drawable/checkbox_background"
+                android:text="Next of Kin" />
+            <RadioButton
+                android:id="@+id/RadioButtonDoctors"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textAlignment="center"
+                android:background="@drawable/checkbox_background"
+                android:text="Doctors" />
+            <RadioButton
+                android:id="@+id/RadioButtonEmergency"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textAlignment="center"
+                android:background="@drawable/checkbox_background"
+                android:text="Emergency" />
+        </RadioGroup>
+
+
+        <ListView
+            android:id="@+id/list_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

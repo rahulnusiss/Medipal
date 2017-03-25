@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="f06.medipal.Appointment.EditAppointmentFragment"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/et_appointment_description"
+        android:hint="@string/appointment_description_hint"
+        android:padding="16dp"
+    />
+
+
+    <TextView
+        android:id="@+id/tv_pick_appointment_time"
+        android:text="@string/appointment_default_time"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/et_appointment_location"
+            android:hint="@string/appointment_location_hint"
+            android:padding="16dp"
+            android:layout_weight="6"
+        />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_dialog_map"
+            android:id="@+id/btn_appointment_open_location"
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:text="@string/action_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_appointment_cancel"
+            android:layout_weight="1"
+        />
+        <Button
+            android:text="@string/action_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_appointment_save"
+            android:layout_weight="1"
+        />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bio"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="Edit Personal Info" />
+        <item
+            android:id="@+id/nav_consumption"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="Consumption" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Medicine Category" />
+    </group>
+<!--
+    <item android:title="Etc">
+        <menu>
+            <item
+                android:id="@+id/nav_history"
+                android:icon="?android:attr/actionModePasteDrawable"
+                android:title="History" />
+            <item
+                android:id="@+id/nav_medicine"
+                android:icon="?android:attr/textSelectHandle"
+                android:title="Medicine" />
+            <item
+                android:id="@+id/nav_measurement"
+                android:icon="@android:drawable/ic_menu_sort_by_size"
+                android:title="Measurement" />
+            <item
+                android:id="@+id/nav_appointment"
+                android:icon="@android:drawable/ic_menu_my_calendar"
+                android:title="Appointment" />
+            <item
+                android:id="@+id/nav_contacts"
+                android:icon="@android:drawable/stat_sys_phone_call"
+                android:title="Contacts" />
+        </menu>
+    </item>
+-->
+</menu>

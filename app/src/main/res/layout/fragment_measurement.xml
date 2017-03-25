@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="f06.medipal.Measurement.MeasurementFragment">
+
+    <RadioGroup
+        android:id="@+id/RadioGroupFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:theme="@android:style/DeviceDefault.Light.SegmentedButton"
+        android:checkedButton="@+id/RadioButtonAll"
+        style="?android:attr/segmentedButtonStyle">
+        <RadioButton
+            android:id="@+id/RadioButtonAll"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@drawable/checkbox_background"
+            android:text="All" />
+        <RadioButton
+            android:id="@+id/RadioButtonBP"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@drawable/checkbox_background"
+            android:text="BP" />
+        <RadioButton
+            android:id="@+id/RadioButtonPulse"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@drawable/checkbox_background"
+            android:text="Pulse" />
+        <RadioButton
+            android:id="@+id/RadioButtonTemp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@drawable/checkbox_background"
+            android:text="Temp" />
+        <RadioButton
+            android:id="@+id/RadioButtonWeight"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@drawable/checkbox_background"
+            android:text="Weight" />
+    </RadioGroup>
+
+
+    <WebView
+        android:id="@+id/MeasurementWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp" />
+</FrameLayout>
